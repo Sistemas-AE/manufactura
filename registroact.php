@@ -77,6 +77,10 @@
 				
 			</div>
 			<div>
+				<h2>Observaciones</h2>
+				<textarea class="md-textarea form-control" name="" id=""  ></textarea>
+			</div>
+			<div>
 				<br>
 				<button  class="btn btn-primary" >Registrar</button>
 			</div>

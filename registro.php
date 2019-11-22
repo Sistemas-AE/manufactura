@@ -1,4 +1,6 @@
 <?php
+
+
 $actividad=$_POST['actividad'];
 $proyecto=$_POST['pro'];
 $persona=$_POST['pers'];
@@ -10,9 +12,7 @@ $fecha=$_POST['fecha'];
 
 echo $actividad;
 echo $pro;
-echo $pers;
-echo $horas;
-echo $semana;
-echo $fecha;
+
+
 
 ?>
