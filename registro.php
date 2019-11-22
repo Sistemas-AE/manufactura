@@ -8,6 +8,11 @@ $fecha=$_POST['fecha'];
 
 
 
-echo "string";
+echo $actividad;
+echo $pro;
+echo $pers;
+echo $horas;
+echo $semana;
+echo $fecha;
 
 ?>
