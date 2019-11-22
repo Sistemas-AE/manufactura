@@ -17,11 +17,11 @@
 
 			<div>
 				<h1>Nombre Proyecto</h1>
-				<input  class="form-control" type="text" name="proyecto" id="proyecto" ">	
+				<input  class="form-control" type="text" name="proyecto" id="proyecto">	
 			</div>
 			<div>
 				<h1>Nombre Interno</h1>
-				<input  class="form-control" type="text" name="proyecto" id="proyecto" ">	
+				<input  class="form-control" type="text" name="interno" id="interno">	
 			</div>
 			<div>
 				<br>
