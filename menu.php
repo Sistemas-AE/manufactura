@@ -19,12 +19,12 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="registrarproyecto.php">Registro Proyecto Interno<span class="sr-only">(current)</span></a>
-      </li>
+    <ul class="navbar-nav mr-auto"> 
       <li class="nav-item active">
         <a class="nav-link" href="registrarproyectos.php">Registro Proyecto<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="registrarproyecto.php">Registro Proyecto Interno<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="registroact.php">Registro De Actividades</a>

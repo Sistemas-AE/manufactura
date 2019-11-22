@@ -16,7 +16,16 @@
 </head>
 <body>
 	<div class="d-flex justify-content-center" align="center">
-		<form action="registro.php" method="POST" >
+
+		<form action="registro.php" method="POST" ><?php
+		$yeah=$_GET['yes'];
+  if ($yeah=='ok') {
+    echo '<div class="alert alert-success alert-dismissible  show" role="alert">
+  <strong>Registro Correcto</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>';}  ?>
 			<div>
 				<h1>Registro de Actividad</h1>
 			</div>
@@ -27,7 +36,7 @@
 			<h2>Proyecto interno</h2><br>
 			<div class="select">
 				
-				<select name="pro" id="slct" >
+				<select name="pro" id="pro" >
 					
 					<?php
 					while ($aproyecto=mysqli_fetch_array($oproyecto)) {
@@ -47,7 +56,7 @@
 				<h2>Persona que Realiza</h2><br>
 			<div class="select" >
 			
-				<select name="pers" id="slct" >
+				<select name="pers" id="pers" >
 					
 					<?php
 					while ($apersonal=mysqli_fetch_array($opersona)) {
@@ -65,11 +74,11 @@
 			</div>
 				<div>
 				<h2>Horas</h2>
-				<input  class="form-control" type="text" name="" style="margin-top: 14px;">
+				<input  class="form-control" type="text" name="horas" id="horas" style="margin-top: 14px;">
 			</div>
 				<div>
 				<h2>Semana</h2>
-				<input  class="form-control" type="text" name="" style="margin-top: 14px;">
+				<input  class="form-control" type="text" name="semana" id="semana" style="margin-top: 14px;">
 			</div>
 			<div>
 				<h2>Fecha de Actividad</h2><br>
@@ -78,7 +87,7 @@
 			</div>
 			<div>
 				<h2>Observaciones</h2>
-				<textarea class="md-textarea form-control" name="obser" id="obser"  ></textarea>
+				<textarea class="md-textarea form-control" name="observaciones" id="observaciones"  ></textarea>
 			</div>
 			<div>
 				<br>
