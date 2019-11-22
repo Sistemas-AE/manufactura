@@ -25,7 +25,14 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>';}  ?>
+</div>';}else{
+	 echo '<div class="alert alert-warning alert-dismissible  show" role="alert">
+  <strong>Bienvenido</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>';
+}  ?>
 			<div>
 				<h1>Registro de Actividad</h1>
 			</div>

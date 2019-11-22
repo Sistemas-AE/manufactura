@@ -21,13 +21,13 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto"> 
       <li class="nav-item active">
-        <a class="nav-link" href="registrarproyectos.php">Registro Proyecto<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="registrarproyectos.php?yes=l">Registro Proyecto<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="registrarproyecto.php">Registro Proyecto Interno<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="registrarproyecto.php?yes=l">Registro Proyecto Interno<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="registroact.php">Registro De Actividades</a>
+        <a class="nav-link" href="registroact.php?yes=l">Registro De Actividades</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Envio De Reportes</a>
