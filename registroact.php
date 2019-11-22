@@ -78,7 +78,7 @@
 			</div>
 			<div>
 				<h2>Observaciones</h2>
-				<textarea class="md-textarea form-control" name="" id=""  ></textarea>
+				<textarea class="md-textarea form-control" name="obser" id="obser"  ></textarea>
 			</div>
 			<div>
 				<br>
