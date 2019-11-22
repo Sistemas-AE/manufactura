@@ -9,6 +9,17 @@
 	<title>Registro de Proyectos</title>
 </head>
 <body>
+	<?php 
+$yeah=$_GET['yes'];
+  if ($yeah=='ok') {
+  echo	 '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>';
+}
+	 ?>
 	<h1 align="center">Registro de proyectos</h1>
 	<br>
 	<br>
