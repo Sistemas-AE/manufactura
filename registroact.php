@@ -7,7 +7,7 @@
 	include("conexion.php");
     $persona = "SELECT * FROM personal" ;
     $opersona =mysqli_query($conecta,$persona)or die("no se realizo la consulta");
-    $proyecto = "SELECT * FROM proyectos" ;
+    $proyecto = "SELECT * FROM nombre_interno" ;
     $oproyecto =mysqli_query($conecta,$proyecto)or die("no se realizo la consulta");
 	include("menu.php")
 	?>
@@ -48,9 +48,9 @@
 					<?php
 					while ($aproyecto=mysqli_fetch_array($oproyecto)) {
                     ?>
-                    <option    value="<?php echo $aproyecto['proyecto'];?>">
+                    <option    value="<?php echo $aproyecto['nombre_interno'];?>">
                         <?php
-                        echo $aproyecto['proyecto'];
+                        echo $aproyecto['nombre_interno'];
                         ?>
                     </option>
                     <?php
