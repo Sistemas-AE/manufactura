@@ -30,7 +30,10 @@
         <a class="nav-link" href="registroact.php?yes=l">Registro De Actividades</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Envio De Reportes</a>
+        <a class="nav-link" href="resultados.php">Resultados horas/Proyecto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resultados2.php">Resultados horas/Personal</a>
       </li>
       
     </ul>

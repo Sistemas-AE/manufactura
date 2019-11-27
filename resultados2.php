@@ -6,7 +6,7 @@
 	error_reporting(0);
 	include("conexion.php");
 	include("menu.php");
-$actividad = "SELECT * FROM `nombre_interno`" ;
+$actividad = "SELECT DISTINCT personal FROM actividad"; ;
  $oactividad =mysqli_query($conecta,$actividad)or die("no se realizo la consulta");
     $horas;
     $semana
@@ -15,7 +15,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 	?>
 </head>
 <body>
-<form action="resultados.php" method="POST">
+<form action="resultados2.php" method="POST">
 	<div >
 		<h1 align="center">Resultados</h1>
 		<div align="center">
@@ -60,7 +60,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 			<div>
 			<?php
 			while ($aactividad=mysqli_fetch_array($oactividad)) {
-				$proy= $aactividad['nombre_interno'];
+				$proy= $aactividad['personal'];
 				$proy=$proy;
 				?>
 				<tr>
@@ -70,7 +70,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 				?>
 				</th>
                     <?php
-                       $res="SELECT proyecto,SUM(horas) as Total_horas,semana FROM actividad WHERE proyecto='$proy' AND semana='$semana';";
+                       $res="SELECT DISTINCT proyecto,SUM(horas) as Total_horas,semana FROM actividad WHERE personal='$proy' AND semana='$semana';";
                        $ores =mysqli_query($conecta,$res)or die("no se realizo la consulta");
 
 
@@ -81,10 +81,10 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
                         ?>
                     <th>
                     	<?php
-                    	if($horas>=1) {
-							echo $horas;
-							}else
-							echo 0;
+						if($horas>=1) {
+						echo $horas;
+						}else
+						echo 0;
                     	?>
                     	
 
