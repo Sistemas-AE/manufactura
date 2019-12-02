@@ -35,6 +35,9 @@
       <li class="nav-item">
         <a class="nav-link" href="resultados2.php">Resultados horas/Personal</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="actividades.php">Editar Actividades</a>
+      </li>
       
     </ul>
   </div>

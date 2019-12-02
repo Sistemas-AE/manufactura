@@ -19,8 +19,26 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 	<div >
 		<h1 align="center">Resultados</h1>
 		<div align="center">
-			<h2>Semana de Trabajo</h2>
-			<input type="date" name="fecha" id="fecha">
+			<table  class="table table-bordered" width="30%" cellpadding="10">
+				<tr>
+				<th align="center"><h2 align="center">Inicial</h2></th>
+
+				<th align="center"><h2 align="center">    Final</h2></th>				
+				</tr>
+				<tr >
+					<th >
+						<div align="center">
+						<input   type="date" name="fecha1" id="fecha1" class="select"> 
+						</div>
+					</th>
+				
+					<th >
+						<div align="center">
+						<input   type="date" name="fecha2" id="fecha2" class="select" >
+						</div>
+					</th>
+				</tr>
+			</table>
 		</div>
 		<br>
 
@@ -42,9 +60,11 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 		$semana=0;
 		$proy=0;
 
-		$semana=$_POST['fecha'];
+		//$semana=$_POST['fecha'];
 		
-		$semana = date("W",strtotime($semana)); 
+		//$semana = date("W",strtotime($semana)); 
+		$fecha1=$_POST['fecha1'];
+		$fecha2=$_POST['fecha2'];
 		
 		?>
 
@@ -54,7 +74,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 				<tr>
 				<th>Proyecto</th>
 				<th>Horas</th>
-				<th>Semana</th>
+				
 				</tr>
 			</div>
 			<div>
@@ -70,7 +90,9 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 				?>
 				</th>
                     <?php
-                       $res="SELECT proyecto,SUM(horas) as Total_horas,semana FROM actividad WHERE proyecto='$proy' AND semana='$semana';";
+                       //$res="SELECT proyecto,SUM(horas) as Total_horas,semana FROM actividad WHERE proyecto='$proy' AND semana='$semana';";
+
+                        $res="SELECT SUM(horas) as Total_horas,semana FROM actividad WHERE proyecto='$proy' AND fecha>='$fecha1' AND fecha<='$fecha2'";
                        $ores =mysqli_query($conecta,$res)or die("no se realizo la consulta");
 
 
@@ -94,14 +116,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
                     ?>
 
 
-                     <th>
-                    	<?php
-                    	if ( $semana>1) {
-                    		echo $semana;
-                    	}else
-                       echo 0;
-                        ?>
-                    </th>
+                  
 
                     <?php
                     }
