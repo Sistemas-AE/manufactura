@@ -28,13 +28,13 @@ $actividad = "SELECT DISTINCT personal FROM actividad"; ;
 				<tr >
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha1" id="fecha1" class="select"> 
+						<input   type="date" name="fecha1" id="fecha1" class="form-control"> 
 						</div>
 					</th>
 				
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha2" id="fecha2" class="select" >
+						<input   type="date" name="fecha2" id="fecha2" class="form-control" >
 						</div>
 					</th>
 				</tr>

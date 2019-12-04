@@ -20,15 +20,14 @@
 		<div class="container">
 			
 
-			<table   width="30%" cellpadding="10" align="center">
+			<table   width="30%" cellpadding="10" align="center" >
 				<tr>
-				<th align="center"><h2 align="center">Personal</h2></th>
-				<th align="center"><h2 align="center">Proyecto</h2></th>
+				<th align="center"><h2 align="center" class="table-secondary">Personal</h2></th>
+				<th align="center"><h2 align="center" class="table-secondary">Proyecto</h2></th>
 
-
-				<th align="center"><h2 align="center">    Inicial</h2></th>
-				<th align="center"><h2 align="center">    Fecha</h2></th>				
 				</tr>
+				
+
 				<tr >
 					<th align="center">
 						<div class="select"  >
@@ -69,15 +68,20 @@
 							
 			</div>
 					</th>
+
+					<tr>
+					<th align="center"><h2 align="center"class="table-secondary"> Inicial</h2></th>
+				<th align="center"><h2 align="center"class="table-secondary">Fecha</h2></th>				
+				</tr>
 				
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha1" id="fecha1" class="select">
+						<input   type="date" name="fecha1" id="fecha1" class="form-control">
 						</div>
 					</th>
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha2" id="fecha2" class="select">
+						<input   type="date" name="fecha2" id="fecha2" class="form-control">
 						</div>
 					</th>
 				</tr>
@@ -106,7 +110,7 @@
 
 
 		<div class="container">
-			<table align="center" border="1" cellpadding="15" class="table" > 
+			<table align="center" border="1" cellpadding="15" class="table table-striped" > 
 				<div align="center">
 					<tr >
 						<th>id</th>

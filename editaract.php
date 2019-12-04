@@ -117,17 +117,14 @@ $d4=$_POST['horas'];
 $d5=$_POST['semana'];
 $d6=$_POST['fecha'];
 $d7=$_POST['observaciones'];
-
-
-
 $actualizar=("UPDATE actividad SET actividad='$d1', proyecto='$d2', personal='$d3', horas='$d4', semana='$d5',fecha='$d6',observaciones='$d7' WHERE idactividad= '$id';  ");
 $oactualizar =mysqli_query($conecta,$actualizar)or die("no se realizo la consulta");
+echo "<script>";
+echo "window.location = 'actividades.php';";
+echo "</script>";
 
-
-	# code...
 }
 
-//UPDATE actividad SET actividad='ejemplp', proyecto='asas', personal='Osviel Ascencion', horas='52', semana='$50',fecha='2019-12-02',observaciones='222222222222' WHERE idactividad= '3' 
 
 
 ?>

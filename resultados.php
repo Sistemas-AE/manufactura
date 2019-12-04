@@ -19,7 +19,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 	<div >
 		<h1 align="center">Resultados</h1>
 		<div align="center">
-			<table  class="table table-bordered" width="30%" cellpadding="10">
+			<table  class="table table-bordered"  >
 				<tr>
 				<th align="center"><h2 align="center">Inicial</h2></th>
 
@@ -28,13 +28,13 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 				<tr >
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha1" id="fecha1" class="select"> 
+						<input   type="date" name="fecha1" id="fecha1" class="form-control"> 
 						</div>
 					</th>
 				
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha2" id="fecha2" class="select" >
+						<input   type="date" name="fecha2" id="fecha2" class="form-control" >
 						</div>
 					</th>
 				</tr>
@@ -49,14 +49,6 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 		<br>
 		<br>
 		<?php
-
-
-   
-
-
-
-
-
 		$semana=0;
 		$proy=0;
 
@@ -114,24 +106,11 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
                      <?php
                     }
                     ?>
-
-
-                  
-
                     <?php
                     }
                     ?>
 				</tr>
-			</div>
-			
-
-
-
-
-
-
-			
-				
+			</div>				
 			</table>
 		</div>
 	</div>
