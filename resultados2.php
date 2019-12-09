@@ -17,9 +17,9 @@ $actividad = "SELECT DISTINCT personal FROM actividad"; ;
 <body>
 <form action="resultados2.php" method="POST">
 	<div >
-		<h1 align="center">Resultados</h1>
+		<h1 align="center">Resultados por Persona</h1>
 		<div  align="center" >
-			<table  class="table table-bordered" >
+			<table  width="30%" cellpadding="10" align="center" >
 				<tr>
 				<th align="center"><h2 align="center">Inicial</h2></th>
 
@@ -28,7 +28,7 @@ $actividad = "SELECT DISTINCT personal FROM actividad"; ;
 				<tr >
 					<th >
 						<div align="center">
-						<input   type="date" name="fecha1" id="fecha1" class="form-control"> 
+						<input   type="date" name="fecha1" id="fecha1" class="form-control" align="center"> 
 						</div>
 					</th>
 				

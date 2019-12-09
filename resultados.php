@@ -16,10 +16,10 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 </head>
 <body>
 <form action="resultados.php" method="POST">
-	<div >
-		<h1 align="center">Resultados</h1>
+	<div class="container">
+		<h1 align="center">Resultados Horas por Proyecto</h1>
 		<div align="center">
-			<table  class="table table-bordered"  >
+			<table  class="table table-hover"  >
 				<tr>
 				<th align="center"><h2 align="center">Inicial</h2></th>
 
@@ -112,6 +112,7 @@ $actividad = "SELECT * FROM `nombre_interno`" ;
 				</tr>
 			</div>				
 			</table>
+			
 		</div>
 	</div>
 </form>

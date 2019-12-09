@@ -38,7 +38,7 @@
 			</div>
 			<div>
 				<h2>Actividad</h2>
-				<input  class="form-control" type="text" name="actividad" id="actividad" style="margin-top: 14px;">				
+				<input  class="form-control" type="text" name="actividad" id="actividad" required="" style="margin-top: 14px; ">				
 			</div>
 			<h2>Proyecto interno</h2><br>
 			<div class="select">
@@ -81,20 +81,20 @@
 			</div>
 				<div>
 				<h2>Horas</h2>
-				<input  class="form-control" type="text" name="horas" id="horas" style="margin-top: 14px;">
+				<input  class="form-control" type="text" name="horas" id="horas" required="" style="margin-top: 14px;">
 			</div>
 				<div>
 				<h2>Semana</h2>
-				<input  class="form-control" type="text" name="semana" id="semana" style="margin-top: 14px;">
+				<input  class="form-control" type="text" name="semana" id="semana" required="" style="margin-top: 14px;">
 			</div>
 			<div>
 				<h2>Fecha de Actividad</h2><br>
-				<input  class="form-control" type="date" name="fecha" id="fecha">
+				<input  class="form-control" type="date" name="fecha" id="fecha" required="">
 				
 			</div>
 			<div>
 				<h2>Observaciones</h2>
-				<textarea class="md-textarea form-control" name="observaciones" id="observaciones"  ></textarea>
+				<textarea class="md-textarea form-control" name="observaciones" id="observaciones" required=""  ></textarea>
 			</div>
 			<div>
 				<br>

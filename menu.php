@@ -13,7 +13,7 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">Manufactura</a>
+  <a class="navbar-brand" href="inicio.php">Manufactura</a>
   <img style="height: 50px; width: 150px;" src="logosmart.png">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,15 @@
       <li class="nav-item">
         <a class="nav-link" href="actividades.php">Editar Actividades</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registroper.php">Registrar Personal</a>
+      </li>
       
     </ul>
   </div>
+  <a class="nav-link" style="color: white" onclick="cerrar();">CERRAR SESION
+        </a>
+         <script type="text/javascript"> function cerrar(){
+                window.location.href ='cerrar.php';
+              } </script>
 </nav>

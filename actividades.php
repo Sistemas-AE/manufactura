@@ -112,8 +112,8 @@
 		<div class="container">
 			<table align="center" border="1" cellpadding="15" class="table table-striped" > 
 				<div align="center">
-					<tr >
-						<th>id</th>
+					<tr align="center">
+						<th >id</th>
 						<th>Actividad</th>
 						<th>Proyecto</th>
 						<th>Persona</th>
@@ -142,12 +142,9 @@
 					 <?php
             }
             ?>
-					
 				</div>
 			</table>
 		</div>
-		
 	</form>
-
 </body>
 </html>
